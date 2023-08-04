@@ -13,8 +13,12 @@ public class BookingService {
 
     @Autowired
     BookingRepository bookingRepository;
+
     public int daysCalculatorWithDatabase(String name) {
         Optional<BookingModel> bookingModelOptional = bookingRepository.findByReserveName(name);
         return Period.between(bookingModelOptional.get().getCheckIn(), bookingModelOptional.get().getCheckOut()).getDays();
     }
+
+
+
 }

@@ -1,9 +1,15 @@
 package com.example.booking.Models;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+
 import java.time.LocalDate;
 
+@Entity
 public class BookingModel {
 
+    @Id
     private String id;
     private String reserveName;
     private LocalDate checkIn;

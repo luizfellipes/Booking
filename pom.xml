@@ -41,7 +41,12 @@
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>org.everit.web</groupId>
+            <artifactId>org.everit.web.servlet</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
 
 	<build>
 		<plugins>
